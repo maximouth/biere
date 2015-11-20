@@ -1,42 +1,74 @@
 body {
-    background-color: #846;
+    background-color: #ffa;
 }
 
 div.titre {
-    position:relative;
-    top:0em;
-}
+    position:fixed;
+    top:1em;
+    left:34em;
+    #background-color: #fff;
+    height:4em;
+    width:15em;
 
-h1 {
-    text-align: center;
-    color: #436  
-}
-
-h2 {
-    text-align: center;
-    color: #155  
-}
-
-h3 {
-    text-align: center;
-    color: #999  
 }
 
 
 div.menu {
-    position:relative;
-    top: 8em;
-    right: 8;
+    position:fixed;
+    top: 14em;
+    left: 2em;
     z-index: 3;
+    #background-color: #fff;
+    width:16em;
+    height:20em;
 }
 
 
 div.pres {
-    position:relative;
-    top: -6em;
-    left: 0em;
+    position:fixed;
+    top: 8em;
+    left: 19em;
     z-index: 1;
+    #background-color: #fff;
+    width:50em;
 }
+
+
+div.logo {
+    z-index: 0;
+    background-color: #eff;
+    height: 12em;
+    width: 16em;
+    left: 2em;
+
+}
+
+a {
+    font-family: "courier new" , Monospace;
+}
+
+h1 {
+    text-align: center;
+    color: #903;
+    font-weight: bold;
+    font-family: "courier new" , Monospace;
+}
+
+h2 {
+    text-align: center;
+    color: #006;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: "courier new" , Monospace;
+}
+
+h3 {
+    text-align: center;
+    color: #c9f;
+    font-style: oblique;
+    font-family: "courier new" , Monospace;
+}
+
 
 ul>li>ul {
     display: none;
@@ -45,11 +77,11 @@ ul>li>ul {
 ul>li {
    list-style: none;
    text-align: center;
-   background-color: #987;
+   background-color: #ff3;
    line-height: 200%;
-   width: 10em;
-   border-radius: 1/10em;
-   border: 1px solid #CCC;
+   width: 12em;
+   border-radius: 1em;
+   border: 1px solid #3f6;
 }
 
 ul>li:hover {
@@ -60,12 +92,14 @@ ul>li:hover>ul {
    display : block;
    position: absolute;
    margin-top: -2em;
-   margin-left: 7.5em;
+   margin-left: 9.5em;
+   width: 12em;
 }
 
 ul>li>ul>li {
-    background-color: #e19d2a;
+    background-color: #dd1;
     line-height: 150%;
+    height: 2em;
 }
 
 ul>li>a {
