@@ -3,7 +3,7 @@ include "entete.php";
 include "liste.php";
 
 
-function masque ($titre, $type,$nom) {
+function masque ($nom) {
   $ret =  entete($nom);
   
   $ret .= "  <body>

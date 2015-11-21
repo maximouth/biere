@@ -1,7 +1,7 @@
 <?php
 include ('masque.php');
 
-echo masque ('conserve', 'c' , 'contact'); 
+echo masque ('contact'); 
 
 
 ?>
