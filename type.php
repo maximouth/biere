@@ -39,7 +39,7 @@ function lien ($type) {
 switch ($type) {
 case 'c':
   echo "  <h3> C'est une manière assez simple de commencer à brasser, car les <br>
-       principales étapes sont deja faites.'
+       principales étapes sont deja faites.
         ".lien ($type)."
 </h3>
 ";

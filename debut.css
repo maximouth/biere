@@ -5,7 +5,7 @@ body {
 div.titre {
     position:fixed;
     top:1em;
-    left:34em;
+    left:37em;
     #background-color: #fff;
     height:4em;
     width:15em;
@@ -45,6 +45,8 @@ div.logo {
 
 a {
     font-family: "courier new" , Monospace;
+    color: #3c6;
+    text-decoration: none;
 }
 
 h1 {
@@ -67,6 +69,10 @@ h3 {
     color: #c9f;
     font-style: oblique;
     font-family: "courier new" , Monospace;
+}
+
+h3>p {
+    font-style: oblique;
 }
 
 
