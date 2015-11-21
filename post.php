@@ -19,8 +19,9 @@ if (!$type OR !$couleur OR !$auteur OR !$biere OR !$recette ) {
 }
 
 else {
-  $file = fopen ("$type/$couleur/$auteur".$biere , 'a+');
-  
+  $file = fopen ($_POST['type']."/".$_POST['$couleur']."/".$_POST['$auteur']."_".$_POST['biere'].".txt" , 'a+');
+
+  fputs ($file, htmlspecilchar($recette));  
 
   flose ($file);
 

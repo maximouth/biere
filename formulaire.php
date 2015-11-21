@@ -5,9 +5,9 @@ function formulaire() {
 
    $ret .=  " <p class=type>
              <label for='type'>choisir le type de préparation</label><br />
-             <input type='radio' name='type' value='c' /> <label for='type'>conserve</label><br>\n
-             <input type='radio' name='type' value='e' /> <label for='type'>extrait</label><br>\n
-             <input type='radio' name='type' value='g' /> <label for='type'>tout grain</label><br>\n
+             <input type='radio' name='type' value='conserve' /> <label for='type'>conserve</label><br>\n
+             <input type='radio' name='type' value='extrait' /> <label for='type'>extrait</label><br>\n
+             <input type='radio' name='type' value='grain' /> <label for='type'>tout grain</label><br>\n
 </p>
 ";
 
@@ -82,9 +82,9 @@ function formulaire2($recette) {
 
    $ret .=  " <p class=type>
              <label for='type'>choisir le type de préparation</label><br />
-             <input type='radio' name='type' value='c' /> <label for='type'>conserve</label><br>\n
-             <input type='radio' name='type' value='e' /> <label for='type'>extrait</label><br>\n
-             <input type='radio' name='type' value='g' /> <label for='type'>tout grain</label><br>\n
+             <input type='radio' name='type' value='conserve' /> <label for='type'>conserve</label><br>\n
+             <input type='radio' name='type' value='extrait' /> <label for='type'>extrait</label><br>\n
+             <input type='radio' name='type' value='grain' /> <label for='type'>tout grain</label><br>\n
 </p>
 ";
 
