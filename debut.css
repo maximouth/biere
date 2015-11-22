@@ -43,6 +43,46 @@ div.logo {
 
 }
 
+div.liste {
+    position: relative;
+    left: 30em;
+    background-color: #ccf;
+    width : 25em;
+    height: 2em;
+    display: inline-block;
+    margin-top: 1em;
+
+    border-radius: 0.5em;
+
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+
+}
+
+ol {
+    position: relative;
+    top: -4em;
+    list-style-type: none;
+
+}
+
+ol>li {
+    width: 6em;
+}
+
+a>img {
+    height: 1.5em;
+    width: 2.5em;
+}
+
+h2.couleur {
+    position: relative;
+    top: -4em;
+    left: 4em;
+}
+
 p.type {
 #    position: fixed;
     width: 20em;

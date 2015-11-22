@@ -12,7 +12,7 @@ $recette = saisie_fiable($_POST, 'recette', '', false);
 
 if (!$type OR !$couleur OR !$auteur OR !$biere OR !$recette ) {
   if (!$recette) {
-    echo masque();
+    echo masque('poster recette');
     echo "<div class=pres>";
     echo formulaire ();
     echo "</div></body></html>";
