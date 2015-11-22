@@ -43,6 +43,60 @@ div.logo {
 
 }
 
+p.type {
+#    position: fixed;
+    width: 20em;
+}
+p.couleur {
+    position: relative;
+    width: 20em;
+    height: 5em;
+    float: right;
+    top: -8em;
+    right: 3em;
+}
+
+p.auteur {
+    position: relative;
+    width: 30em;
+    height: 1.8em;
+    top: 0em;
+    left: 14em;
+}
+
+p.biere {
+    position: relative;
+    width: 30em;
+    height: 1.8em;
+    top: 0em;
+    left: 14em;
+}
+  echo masque();
+  echo "<div class=pres>";
+  echo "<h1>recette soumise</h1>";
+  echo "</div></body></html>";
+
+p.recette {
+   position: relative;
+#    background-color: #eff;
+    width: 30em;
+    height: 15em;
+    left: 12em;
+    top: -1em;
+
+}
+
+
+p.valider {
+    position: relative;
+ #   background-color: #eff;
+    width: 12em;
+    height: 1.8em;
+    left: 20em;
+    top: -1em;
+    
+}
+
 a {
     font-family: "courier new" , Monospace;
     color: #3c6;
