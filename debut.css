@@ -1,5 +1,7 @@
 body {
     background-color: #ffa;
+       
+
 }
 
 div.titre {
@@ -45,13 +47,15 @@ div.logo {
 
 div.liste {
     position: relative;
-    left: 30em;
+    left: 25em;
     background-color: #ccf;
-    width : 25em;
+    width : 40em;
     height: 2em;
     display: inline-block;
     margin-top: 1em;
 
+    text-align: center;
+    
     border-radius: 0.5em;
 
     border-width:1px;

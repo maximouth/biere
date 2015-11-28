@@ -29,25 +29,19 @@ else {
 
     echo masque();
 
+    //php -> sql
+    // on se connecte à MySQL
+    $db = mysql_connect("localhost", "root", "max@94");
 
-    ///**** ICI ****///
-    $file = fopen ("test.txt", 'c');
-    if (!$file) {
-      echo "<h1>ouverture ratée</h1>";
-    }
-
-
-    //.$_POST['type']."/".$_POST['couleur']."/".$_POST['auteur']."_".$_POST['biere'], 'a+');
-
-  
-  if (fwrite ($file, 'test') === false) {
-      echo "<h1>ecriture ratée</h1>";
-  }
-
-  fwrite ($file, htmlspecilchar($_POST['recette']));  
-
-  flose ($file);
-
+    // on sélectionne la base
+    mysql_select_db("recette",$db);
+    
+    // on crée la requête SQL ///**** pas encore de photo ****///
+    $sql = "insert into recette (auteur,nom,recette,type,couleur) values ('".$_POST['auteur']."','".$_POST['biere']."','".$_POST['recette']."','".$_POST['type']."','".$_POST['couleur']."');";
+    
+    // on envoie la requête
+    $req = mysql_query($sql) or die('Erreur SQL !<h1>'.$sql.'<h1>'.mysql_error());    
+    
     echo "<div class=pres>";
     echo "<h1>recette soumise</h1>";
     echo "</div></body></html>";
