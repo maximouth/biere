@@ -59,7 +59,7 @@ function liredoss($type, $coul) {
       $ret .= "<li><div class=liste> <a href='recette.php?nom=".$row['nom']."&type=".$type."&coul=".$coul."'>- ".$row['auteur'].", ".$row['nom'].", ".$row['note']."   <img src='icone.png'><img src='icone.png'><img src='icone.png'><img src='icone.png'><img src='icone.png'> </a>
              </div></li>\n";
     }
-
+    mysql_close ($db);
     return $ret;
 }
 

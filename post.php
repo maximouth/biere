@@ -41,6 +41,8 @@ else {
     
     // on envoie la requête
     $req = mysql_query($sql) or die('Erreur SQL !<h1>'.$sql.'<h1>'.mysql_error());    
+
+    mysql_close ($db);
     
     echo "<div class=pres>";
     echo "<h1>recette soumise</h1>";
