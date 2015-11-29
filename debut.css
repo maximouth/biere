@@ -4,9 +4,84 @@ body {
 
 }
 
+
+div.nom {
+    text-align: center;
+    top: -6em;
+    font-weight: bold;
+    font-size : 2em;
+    font-family: "courier new" , Monospace;
+}
+
+div.recette {
+    position: relative;
+    width: 40em;
+    height: auto;
+    left: 23em;
+
+    margin-bottom: 3em;
+}
+
+div.nottte {
+    position: relative;
+    left: 50em;
+}
+
+form.note {
+   position: relative;
+    left: 20em;
+
+    
+    width: 46em;
+
+    
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;    
+
+    margin-bottom : 5em;
+}
+
+form.commentaire {
+    position: relative;
+    left: 20em;
+
+    
+    width: 46em;
+
+    
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;    
+}
+
+
+div.comm {
+   position: relative;
+    left: 20em;
+
+    
+    width: 46em;
+
+    
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;    
+
+    margin-top:2em;
+    margin-bottom:2em;
+    
+}
+
+h2.recet {
+    text-align: left;
+    font-weight: none;
+    height : 100%;
+}
+
 div.titre {
-    position:fixed;
-    top:1em;
+    position:relative;
+    top:-9em;
     left:37em;
     #background-color: #fff;
     height:4em;

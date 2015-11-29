@@ -9,7 +9,7 @@ $type = htmlspecialchars($_GET['type']);
 $coul = htmlspecialchars($_GET['coul']);
 
 //afficher nom recette
-echo "<h1 class=nom>$nom</h1>";
+echo "<div class='nom'> $nom</div>";
 
 
 
@@ -81,11 +81,7 @@ where  type = '$type' and couleur = '$coul' and nom = '$nom'
 $row =  mysql_fetch_assoc($req);
 $note = $row['note'];
 
-echo "
-<div class='nottte'>
-<p>note de la recette :  $note </p>
-</div>
-";
+
 
     // on crée la requête SQL ///**** pas encore de photo ****///
     $sql = "select recette
@@ -97,7 +93,13 @@ echo "
     $req = mysql_query($sql) or die('Erreur SQL !<h1>'.$sql.'<h1>'.mysql_error());    
 //afficher recette
 $row = mysql_fetch_assoc($req);
-echo "<h2 class=recette>".$row['recette']." </h2>";
+echo "<div class=recette><h2 class='recet'>".$row['recette']."</h2> </div>";
+
+echo "
+<div class='nottte'>
+<p>note de la recette :  $note </p>
+</div>
+";
 
 //fenetre de post de commentaire
 //note de la recette

@@ -45,21 +45,22 @@ function formulaire() {
        Entrer votre recette ici :
     </label> <br>
        <textarea name='recette' id='recette' rows='15' cols='60'>
-         Ingredients :
-              - houblon(s)
-              - levure
-              - type de malt
-              - épices
+       pour maintenir mise en page mettre &ltbr&gt en fin de ligne
+Ingredients : 
+     - houblon(s)
+     - levure
+     - type de malt
+     - épices
          
-         Differentes techniques :
-              - façon de houblonner
-              - type de refroidisseur
-              - différents paliers utilisé
+Differentes techniques :
+     - façon de houblonner
+     - type de refroidisseur
+     - différents paliers utilisé
        
-         Etapes :
-              -
-              -
-              -
+Etapes :
+     -
+     -
+     -
         </textarea>       
 </p>
 ";
@@ -141,8 +142,19 @@ function formulaire2($recette) {
 
 function commentaire () {
   $ret = '';
-  $ret .= "<form method='post' action='' class='commentaire'>";
 
+  ///formulaire note
+   $ret .= "<form method='post' action='' class='note'>
+            <p>Quelle note donnez vous à cette recette ? {0-5}</p>\n              
+             <input name='note' type='number' min='0' max='5'step='1'> \n
+             <input  type=submit name=envoyer>\n
+</form>\n          
+";
+
+
+   /// formulaire commentaire
+  $ret .= "<form method='post' action='' class='commentaire'>";
+  
   $ret .= "
 <p class=commentaire>
 
@@ -155,8 +167,8 @@ function commentaire () {
        Vous avez un commentaire a faire sur cette recette? :
     </label> <br>
        <textarea name='commentaire' id='commentaire' rows='10' cols='100'>
-
-                Restez poli et courtois s'il vous plait
+inserer un retour à la ligne &ltbr&gt
+                        Restez poli et courtois s'il vous plait
         
        </textarea>       
 </p>
@@ -164,11 +176,7 @@ function commentaire () {
 
   $ret .= "<input  type=submit name=envoyer>";
 
-  $ret .= "</form>\n<form method='post' action='' class='note'>
-            <p>Quelle note donnez vous à cette recette ? {0-5}</p>\n              
-             <input name='note' type='number' min='0' max='5'step='1'> \n
-             <input  type=submit name=envoyer>\n
-          ";
+ 
   
   $ret .= "</form>\n";
   return $ret;  
