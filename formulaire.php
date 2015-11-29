@@ -139,6 +139,41 @@ function formulaire2($recette) {
    return $ret;
  }
 
+function commentaire () {
+  $ret = '';
+  $ret .= "<form method='post' action='' class='commentaire'>";
+
+  $ret .= "
+<p class=commentaire>
+
+   <p class=auteur>\n
+             <label for='auteur'>Nom de l'auteur :</label>\n
+             <input type='text' name='auteur' id='auteur' placeholder='Mon nom d auteur' size='20' maxlength='20' />\n
+             </p>\n
+
+    <label for='commentaire'>
+       Vous avez un commentaire a faire sur cette recette? :
+    </label> <br>
+       <textarea name='commentaire' id='commentaire' rows='10' cols='100'>
+
+                Restez poli et courtois s'il vous plait
+        
+       </textarea>       
+</p>
+";
+
+  $ret .= "<input  type=submit name=envoyer>";
+
+  $ret .= "</form>\n<form method='post' action='' class='note'>
+            <p>Quelle note donnez vous à cette recette ? {0-5}</p>\n              
+             <input name='note' type='number' min='0' max='5'step='1'> \n
+             <input  type=submit name=envoyer>\n
+          ";
+  
+  $ret .= "</form>\n";
+  return $ret;  
+
+}
 
 
 ?>

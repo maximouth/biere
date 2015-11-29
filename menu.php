@@ -1,35 +1,14 @@
 <?php
-include "entete.php";
-include "liste.php";
 
-echo entete("beer world");
-
+include "masque.php";
+//echo entete("beer world");
+echo masque("The Beer Cookbook");
 
 
 ?>
 <body>
 
 
-  <div class=logo>
-
-  </div>
-
-  <div class=titre >
-  <h1> Beer World </h1>
-  </div>
-  
-  <div class=menu >
-  <ul>
-  <li><a href=""> accueil</a>  </li>
-  <?php
-  echo liste ( 'conserve', 'c');
-  echo liste ( 'extrait', 'e');
-  echo liste ( 'tout grain', 'g');
-  ?>
-  <li><a href="post.php"> poster une recette </a></li>
-  <li><a href="contact.php"> nous contacter </a></li>
-</ul>
-</div>
 
 <div class=pres>
 <h2>LE site de partage de recette communautaire</h2>

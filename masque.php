@@ -8,11 +8,11 @@ function masque ($nom) {
   
   $ret .= "  <body>
   <div class=logo>
-
+      <img src='logo3.png'>
   </div>
 
   <div class=titre >
-  <h1> Beer World </h1>
+      <img class=nom src='nom4.png'>
   </div>
   
   <div class=menu >
