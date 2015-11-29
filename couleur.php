@@ -56,8 +56,30 @@ function liredoss($type, $coul) {
     $req = mysql_query($sql) or die('Erreur SQL !<h1>'.$sql.'<h1>'.mysql_error());    
 
     while ($row = mysql_fetch_assoc($req)) {
-      $ret .= "<li><div class=liste> <a href='recette.php?nom=".$row['nom']."&type=".$type."&coul=".$coul."'>- ".$row['auteur'].", ".$row['nom'].", ".$row['note']."   <img src='icone.png'><img src='icone.png'><img src='icone.png'><img src='icone.png'><img src='icone.png'> </a>
-             </div></li>\n";
+      $ret .= "<li><div class=liste> <a href='recette.php?nom=".$row['nom']."&type=".$type."&coul=".$coul."'>- ".$row['auteur'].", ".$row['nom'].", ".$row['note']."";
+
+      //recuperer valeur de la note
+      switch ($row['note']) {
+      case 0 :
+	$ret .= " <img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'></div></li>\n";
+	break;
+      case 1 :
+	$ret .= " <img src='choppe_pleine.png'><img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'></div></li>\n";
+        break;
+      case 2 :
+	$ret .= " <img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_vide.png'><img src='choppe_vide.png'><img src='choppe_vide.png'></div></li>\n";
+        break;
+      case 3 :
+	$ret .= " <img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_vide.png'><img src='choppe_vide.png'></div></li>\n";
+	break;
+      case 4 :
+	$ret .= " <img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_vide.png'></div></li>\n";
+        break;
+      case 5 :
+	$ret .= " <img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'><img src='choppe_pleine.png'></div></li>\n";
+	break;
+	
+      }
     }
     mysql_close ($db);
     return $ret;
