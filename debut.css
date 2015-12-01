@@ -1,6 +1,6 @@
 body {
-    background-color: #ffa;
-       
+    background-color: #33CC00;
+    background-image: url("fond_vert.png");
 
 }
 
@@ -14,41 +14,63 @@ div.nom {
 }
 
 div.recette {
+    background-image: url("paper.png");
+    background-position:center center;
+    background-size: 40em auto;
+    background-repeat: no-repeat;
+    
     position: relative;
     width: 40em;
     height: auto;
-    left: 23em;
-
+    left: -10em;
     margin-bottom: 3em;
+
+    #background-color: #fff;
+
+    font-family: "courier new" , Monospace;
+
 }
+
+div.recette>h2{
+    margin-left: 3em;
+    #    background-color: #000;
+    top: 0.1em;
+}
+
 
 div.nottte {
     position: relative;
-    left: 50em;
+    left: 18em;
+    box-shadow: 8px 2px 4px #3cf;
+    width: 12em;
+    #background-color: #fff;
+    top: 0em;
 }
 
 form.note {
-   position: relative;
-    left: 20em;
-
+    position: relative;
+    left: -15em;
+    #  top: 6em;
+    box-shadow: 3px 2px 12px #555;
     
     width: 46em;
-
+    
     
     border-width:1px;
     border-style:dotted;
     border-color:black;    
-
+    
     margin-bottom : 5em;
 }
 
 form.commentaire {
     position: relative;
-    left: 20em;
-
+    left: -15em;
+   # top: 4em;
     
     width: 46em;
 
+    box-shadow: 3px 2px 12px #555;
     
     border-width:1px;
     border-style:dotted;
@@ -58,11 +80,12 @@ form.commentaire {
 
 div.comm {
    position: relative;
-    left: 20em;
-
+    left: -15em;
+    top: 5em;
     
     width: 46em;
 
+    box-shadow: -3px -2px 12px #333;
     
     border-width:1px;
     border-style:dotted;
@@ -70,13 +93,14 @@ div.comm {
 
     margin-top:2em;
     margin-bottom:2em;
-    
+
 }
+
 
 h2.recet {
     text-align: left;
-    font-weight: none;
-    height : 100%;
+    height : auto;
+    
 }
 
 div.titre {
@@ -108,12 +132,13 @@ div.menu {
 
 
 div.pres {
-    position:fixed;
-    top: 8em;
-    left: 19em;
+    position:relative;
+    top: 6em;
+    left: -13em;
     z-index: 1;
     #background-color: #fff;
     width:50em;
+    
 }
 
 
@@ -143,6 +168,7 @@ div.liste {
     border-style:dotted;
     border-color:black;
 
+    box-shadow: 5px 3px 12px #333;
 
 }
 
@@ -151,9 +177,17 @@ ol {
     top: -4em;
     list-style-type: none;
 
+    
 }
 
 ol>li {
+    position: relative;
+
+    left: -35em;
+    top: 6em;
+    
+#    
+
     width: 6em;
 }
 
@@ -164,51 +198,96 @@ a>img {
 
 h2.couleur {
     position: relative;
-    top: -4em;
-    left: 4em;
+    top: 0em;
+    left: 0em;
+
+    width: 17em;
 }
 
 p.type {
 #    position: fixed;
     width: 20em;
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+
+
 }
 p.couleur {
     position: relative;
     width: 20em;
     height: 5em;
     float: right;
-    top: -8em;
+    top: -7.5em;
     right: 3em;
+
+    text-align: center;
+
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+
 }
 
 p.auteur {
     position: relative;
-    width: 30em;
+    width: 25em;
     height: 1.8em;
     top: 0em;
     left: 14em;
+
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    text-align: center;
 }
 
 p.biere {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
     position: relative;
-    width: 30em;
+    width: 25em;
     height: 1.8em;
     top: 0em;
     left: 14em;
-}
-  echo masque();
-  echo "<div class=pres>";
-  echo "<h1>recette soumise</h1>";
-  echo "</div></body></html>";
 
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+    text-align: center;
+    
+}
+ 
 p.recette {
    position: relative;
 #    background-color: #eff;
-    width: 30em;
-    height: 15em;
-    left: 12em;
+    width: 40em;
+    height: 25em;
+    left: em;
     top: -1em;
 
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+
+    text-align: center;
+    
 }
 
 
@@ -229,23 +308,28 @@ a {
 }
 
 h1 {
-    text-align: center;
+#    text-align: center;
     color: #903;
     font-weight: bold;
     font-family: "courier new" , Monospace;
+    width: 15em;
+    left: -4em;
 }
 
 h2 {
-    text-align: center;
+    position: relative;
+    #    text-align: center;
     color: #006;
     text-decoration: underline;
     font-style: italic;
     font-family: "courier new" , Monospace;
+    #top: 7em;
+    left: 4em;
 }
 
 h3 {
     text-align: center;
-    color: #c9f;
+    color: #fff;
     font-style: oblique;
     font-family: "courier new" , Monospace;
 }
@@ -267,6 +351,8 @@ ul>li {
    width: 12em;
    border-radius: 1em;
    border: 1px solid #3f6;
+   margin-bottom: 1em;
+   box-shadow: 3px 2px 12px #555;
 }
 
 ul>li:hover {

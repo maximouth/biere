@@ -44,8 +44,10 @@ function formulaire() {
     <label for='recette'>
        Entrer votre recette ici :
     </label> <br>
-       <textarea name='recette' id='recette' rows='15' cols='60'>
-       pour maintenir mise en page mettre &ltbr&gt en fin de ligne
+       <textarea name='recette' id='recette' rows='25' cols='70'>
+
+
+
 Ingredients : 
      - houblon(s)
      - levure

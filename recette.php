@@ -25,7 +25,7 @@ echo "<div class='nom'> $nom</div>";
 //si il y a un commentaire en envoyer
 if(isset ($_POST['commentaire']) AND isset($_POST['auteur'])) {
   $sql = "insert into commentaire (nom, auteur, date, commentaire, type, couleur)
-values ('$nom', '".$_POST['auteur']."', '".date('Y-m-d H:i:s')."', '".htmlspecialchars($_POST['commentaire'])."', '$type', '$coul')
+values ('$nom', '".$_POST['auteur']."', '".date('Y-m-d H:i:s')."', '".nl2br(htmlspecialchars($_POST['commentaire']))."', '$type', '$coul')
 ;
 
 ";
