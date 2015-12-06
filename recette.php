@@ -1,12 +1,30 @@
 <?php
     include "masque.php";
     include "formulaire.php";
+    include "erreur.php";
 
-    echo masque("recette de ".htmlspecialchars($_GET['nom'])."");
 
 $nom = htmlspecialchars($_GET['nom']);
 $type = htmlspecialchars($_GET['type']);
 $coul = htmlspecialchars($_GET['coul']);
+
+
+
+if ($type != 'conserve' AND $type != 'extrait' AND $type != 'grain') {
+  echo pageerreur();
+  die();
+}
+if ($coul != 'blanche' AND $coul != 'blonde' AND $coul != 'brune' AND $coul != 'stout' AND $coul != 'ambree' AND $coul != 'autre' ) {
+  echo pageerreur();
+  die();
+}
+
+
+    echo masque("recette de ".htmlspecialchars($_GET['nom'])."");
+
+
+
+
 
 //afficher nom recette
 echo "<div class='nom'> $nom</div>";

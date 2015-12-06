@@ -12,7 +12,7 @@ function masque ($nom) {
   </div>
 
   <div class=titre >
-      <h1>The Beer CookBook </h1
+      <h1>The Beer CookBook </h1>
   </div>
   
   <div class=menu >

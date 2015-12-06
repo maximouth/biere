@@ -1,10 +1,10 @@
 <?php
-    include "masque.php";
+    include "masque.php"; 
+    include 'erreur.php';
 
-    echo masque("liste recette");
 
-$t = $_GET['type'];
-$coul = $_GET['couleur'];
+$t = htmlspecialchars($_GET['type']);
+$coul = htmlspecialchars($_GET['couleur']);
 switch ($t) {
 case 'c' :
   $type = 'conserve';
@@ -36,6 +36,17 @@ case 'autre' :
   $couleur = 'autre';
   break;
 }
+
+if ($type != 'conserve' AND $type != 'extrait' AND $type != 'grain') {
+  echo pageerreur();
+  die();
+}
+if ($coul != 'blanche' AND $coul != 'blonde' AND $coul != 'brune' AND $coul != 'stout' AND $coul != 'ambree' AND $coul != 'autre' ) {
+  echo pageerreur();
+  die();
+}
+
+    echo masque("liste recette");
 
 function liredoss($type, $coul) {
 

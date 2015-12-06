@@ -1,8 +1,18 @@
 <?php
 
 include 'masque.php';
+include 'erreur.php';
 
-$type = $_GET['type'];
+$type = htmlspecialchars($_GET['type']);
+
+if ($type != 'c' AND $type != 'e' AND $type != 'g') {
+  echo pageerreur();
+  die();
+}
+
+
+
+
 
 switch ($type) {
 case 'c' :
