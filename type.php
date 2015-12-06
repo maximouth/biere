@@ -33,25 +33,25 @@ function lien ($type) {
 ?>
 
 <div class=pres>
-  <h2> Vous êtes ici sur une page concernant les recettes de bière <br>
+  <h2 class='type'> Vous êtes ici sur une page concernant les recettes de bière <br>
   à base de <?php echo $t; ?><br></h2>
 <?php
 switch ($type) {
 case 'c':
-  echo "  <h3> C'est une manière assez simple de commencer à brasser, car les <br>
+  echo "  <h3 class='type'> C'est une manière assez simple de commencer à brasser, car les <br>
        principales étapes sont deja faites.
         ".lien ($type)."
 </h3>
 ";
   break;
 case 'e':
-  echo " <h3> Une manière un peu plus compmiqué mais qui permet d'obtenir de <br>             meilleurs resultats, et un contrôle plus grand qu'avec les conserves <br> 
+  echo " <h3 class='type'> Une manière un peu plus compmiqué mais qui permet d'obtenir de <br>             meilleurs resultats, et un contrôle plus grand qu'avec les conserves <br> 
 ".lien($type)."
 </h3>
 ";
   break;
 case 'g' :
-  echo " <h3> Voici la manière de faire des 'vrais'! <br>
+  echo " <h3 class='type'> Voici la manière de faire des 'vrais'! <br>
               un contrôle de la recette de A à Z, mais demande plus de temps <br>
              et de courage pour la réalisation d'un biere<br>
            ".lien($type)."

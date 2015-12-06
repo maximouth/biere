@@ -1,7 +1,7 @@
 <?php
 function formulaire() {
    $ret = '';
-   $ret .= "<form method='post' action=''>";
+   $ret .= "<form method='post' action=''  enctype='multipart/form-data'>";
 
    $ret .=  " <p class=type>
              <label for='type'>choisir le type de préparation</label><br />
@@ -39,6 +39,14 @@ function formulaire() {
             </p>
 ";
 
+   $ret .=  "<p class='photo'>
+             <label for='photo'>rajouter une photo (.png, .jpg, .jpeg, .bmp)<br></label> 
+             <input type='file' name='photo'> 
+             <input type='hidden' name='MAX_FILE_SIZE' value='50000'> 
+             </p>
+";
+
+   
         $ret .= "
 <p class=recette>
     <label for='recette'>
@@ -168,8 +176,7 @@ function commentaire () {
     <label for='commentaire'>
        Vous avez un commentaire a faire sur cette recette? :
     </label> <br>
-       <textarea name='commentaire' id='commentaire' rows='10' cols='100'>
-inserer un retour à la ligne &ltbr&gt
+       <textarea name='commentaire' id='commentaire' rows='10' cols='80'>
                         Restez poli et courtois s'il vous plait
         
        </textarea>       

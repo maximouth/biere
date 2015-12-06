@@ -1,7 +1,7 @@
 body {
     background-color: #33CC00;
     background-image: url("fond_vert.png");
-
+    font-family: "courier new" , Monospace;
 }
 
 
@@ -130,6 +130,24 @@ div.menu {
     height:20em;
 }
 
+div.photo {
+    position: relative;
+
+//    left: 27em;
+    
+    background-color: #fff;
+
+   height : 20em;
+   width: 25em;
+   
+}
+
+div.photo>a>img {
+    height : 20em;
+    width: 25em;
+
+}
+
 
 div.pres {
     position:relative;
@@ -138,9 +156,23 @@ div.pres {
     z-index: 1;
     #background-color: #fff;
     width:50em;
-    
+    font-family: "courier new" , Monospace;
 }
 
+
+
+div.pres>h2.type{
+
+    font-family: "courier new" , Monospace;
+    left: 2em;
+    width: 25em;
+}
+
+div.pres>h3.type {
+#    background-color: #fff;
+    width: 33em;
+    font-family: "courier new" , Monospace;
+}
 
 div.logo {
     z-index: 0;
@@ -148,7 +180,7 @@ div.logo {
     height: 12em;
     width: 16em;
     left: 2em;
-
+    font-family: "courier new" , Monospace;
 }
 
 div.liste {
@@ -159,7 +191,7 @@ div.liste {
     height: 2em;
     display: inline-block;
     margin-top: 1em;
-
+    font-family: "courier new" , Monospace;
     text-align: center;
     
     border-radius: 0.5em;
@@ -169,14 +201,14 @@ div.liste {
     border-color:black;
 
     box-shadow: 5px 3px 12px #333;
-
+    font-family: "courier new" , Monospace;
 }
 
 ol {
     position: relative;
     top: -4em;
     list-style-type: none;
-
+    font-family: "courier new" , Monospace;
     
 }
 
@@ -187,7 +219,7 @@ ol>li {
     top: 6em;
     
 #    
-
+    font-family: "courier new" , Monospace;
     width: 6em;
 }
 
@@ -200,7 +232,7 @@ h2.couleur {
     position: relative;
     top: 0em;
     left: 0em;
-
+    font-family: "courier new" , Monospace;
     width: 17em;
 }
 
@@ -212,7 +244,7 @@ p.type {
     border-color:black;
 
     box-shadow: 5px 3px 12px #333;
-
+    font-family: "courier new" , Monospace;
 
 }
 p.couleur {
@@ -230,7 +262,7 @@ p.couleur {
     border-color:black;
 
     box-shadow: 5px 3px 12px #333;
-
+    font-family: "courier new" , Monospace;
 }
 
 p.auteur {
@@ -248,8 +280,13 @@ p.auteur {
 
     margin-top: 2em;
     margin-bottom: 2em;
-
+    font-family: "courier new" , Monospace;
     text-align: center;
+}
+
+p.commentaire>label {
+    text-align: center;
+    font-family: "courier new" , Monospace;
 }
 
 p.biere {
@@ -269,14 +306,37 @@ p.biere {
 
     box-shadow: 5px 3px 12px #333;
     text-align: center;
-    
+    font-family: "courier new" , Monospace;
 }
- 
+
+p.photo {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+    position: relative;
+    width: 30em;
+    height: 3em;
+    top: 0em;
+    left: 0em;
+
+
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+
+    box-shadow: 5px 3px 12px #333;
+    text-align: center;
+    font-family: "courier new" , Monospace;
+}
+
+
+
 p.recette {
    position: relative;
 #    background-color: #eff;
     width: 40em;
-    height: 25em;
+    height: 27em;
     left: em;
     top: -1em;
 
@@ -287,7 +347,7 @@ p.recette {
     box-shadow: 5px 3px 12px #333;
 
     text-align: center;
-    
+    font-family: "courier new" , Monospace;
 }
 
 
@@ -298,12 +358,12 @@ p.valider {
     height: 1.8em;
     left: 20em;
     top: -1em;
-    
+    font-family: "courier new" , Monospace;
 }
 
 a {
     font-family: "courier new" , Monospace;
-    color: #3c6;
+    color: #309;
     text-decoration: none;
 }
 
@@ -311,9 +371,10 @@ h1 {
 #    text-align: center;
     color: #903;
     font-weight: bold;
-    font-family: "courier new" , Monospace;
+#    font-family: "courier new" , Monospace;
     width: 15em;
     left: -4em;
+    font-family: cursive;
 }
 
 h2 {
@@ -322,20 +383,23 @@ h2 {
     color: #006;
     text-decoration: underline;
     font-style: italic;
-    font-family: "courier new" , Monospace;
+ #   font-family: "courier new" , Monospace;
     #top: 7em;
     left: 4em;
+    font-family: cursive;
 }
 
 h3 {
     text-align: center;
-    color: #fff;
+    font-family: cursive;
     font-style: oblique;
-    font-family: "courier new" , Monospace;
+    #    font-family: "courier new" , Monospace;
+    color: #CCFFFF;
 }
 
 h3>p {
     font-style: oblique;
+
 }
 
 

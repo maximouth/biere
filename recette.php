@@ -11,7 +11,15 @@ $coul = htmlspecialchars($_GET['coul']);
 //afficher nom recette
 echo "<div class='nom'> $nom</div>";
 
+//afficher la photo
 
+echo "<div class='photo'> \n
+         <a href='../".$type ."/". $coul ."/". $nom  ."'>    
+           <img src='../".$type ."/". $coul ."/". $nom. "' >
+        </a>
+     </div>";
+
+//
 
 //recuperer la recette
    //php -> sql
