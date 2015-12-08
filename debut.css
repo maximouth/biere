@@ -13,6 +13,35 @@ div.nom {
     font-family: "courier new" , Monospace;
 }
 
+div.recherche {
+    position: relative;
+
+    width: 16em;
+
+    left: 74em;
+    top: -10em;
+    
+#    background-color: #fff;
+
+}
+
+div.rech {
+    position: relative;
+    top : 4em;
+
+}
+
+div.nbres {
+    position: relative;
+
+#    background-color: #fff;
+
+    top : -9em;
+    left: -9em;
+    width: 40em;
+    
+}
+
 div.recette {
     background-image: url("paper.png");
     background-position:center center;
