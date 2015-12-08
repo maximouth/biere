@@ -11,8 +11,8 @@ function masque ($nom) {
       <img src='logo3.png'>
   </div>
 
-  <div class=titre >
-      <h1>The Beer CookBook </h1>
+  <div class=titre >"./* il manque un chevron, avec ca detruit la mise en page  */ "
+      <h1>The Beer CookBook </h1
   </div>
   
   <div class=menu >
