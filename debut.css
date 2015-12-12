@@ -18,11 +18,66 @@ div.recherche {
 
     width: 16em;
 
-    left: 74em;
+    left: 65em;
     top: -10em;
     
 #    background-color: #fff;
 
+}
+
+div.typeform {
+    position: relative;
+    width: 10em;
+    
+    #background-color: #fff;
+
+    top: 6em;
+    left: -10em;    
+}
+
+div.coulform {
+    position: relative;
+    width: 12em;
+    
+   # background-color: #fff;
+
+    top: -0.45em;
+    left: 3em;
+    
+}
+
+
+div.auteurform {
+    position: relative;
+    width: 13em;
+    
+  #  background-color: #fff;
+
+    top: -9.75em;
+    left: 17em;
+}
+
+
+div.rechercherform {
+    position: relative;
+    width: 13em;
+    
+ #   background-color: #fff;
+
+    top: -3em;
+    left: 2em;
+    
+}
+
+div.vldform {
+    position: relative;
+    width: 15em;
+    
+#    background-color: #fff;
+
+    top: -1em;
+    left: 2em;
+ 
 }
 
 div.rech {
