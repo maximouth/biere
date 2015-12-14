@@ -16,7 +16,7 @@ function masque ($nom) {
   <div class='recherche'>
       <form method='post' action=''>
           <label for='name'>recherche</label>
-          <input type='text'name='recherche' placeholder='auteur' size='12' maxlength='12' />
+          <input type='text'name='recherche' placeholder='auteur' size='16' maxlength='16' />
       </form>
   </div>
 

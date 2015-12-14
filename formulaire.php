@@ -193,4 +193,60 @@ function commentaire () {
 }
 
 
+
+function rechercheform() {
+  $ret = "
+<form method='post' action='' class='formrecherche'>
+
+  <div class='typeform'>
+  <label for='type'>rechercher dans type?<br></label>
+  <input type='checkbox' name='type[]' value='conserve' />conserve<br />
+  <input type='checkbox' name='type[]' value='extrait' />extrait<br />
+  <input type='checkbox' name='type[]' value='grain' />tout grain<br />
+  </div>
+
+  <div class='coulform'>
+  <label for='coul'>recherche dans couleur?<br></label>
+  <input type='checkbox' name='coul[]' value='blanche' />blanche<br />
+  <input type='checkbox' name='coul[]' value='blonde' />blonde<br />
+  <input type='checkbox' name='coul[]' value='brune' />brune<br />
+  <input type='checkbox' name='coul[]' value='ambree' />ambree<br />
+  <input type='checkbox' name='coul[]' value='stout' />stout<br />
+  <input type='checkbox' name='coul[]' value='autre' />autre<br />
+  </div>
+
+  <div class='auteurform'>
+  <label for='auteur'>rechercher le nom d'une bière ou un auteur ?<br></label>
+  <input type='checkbox' name='auteur' value='auteur' />auteur<br />
+  <input type='checkbox' name='nom' value='nom' />nom biere<br />  
+  </div>
+  
+  <div class='rechercherform'>
+  <label for='rchform'> votre recherche :</label>
+  <input type='text' name='rchform'  placeholder='nom,auteur...' maxlength='15'>
+  </div>
+
+ <div class='vldform'>
+ <label for='validerform'>lancer votre recherche</label>
+ <input type='submit' name='validerform'>
+ </div>
+
+</form>
+
+</body> </html>
+
+   ";
+
+
+  return $ret;
+  
+}
+
+
+
+
+
+
+
+
 ?>

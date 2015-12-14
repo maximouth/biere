@@ -1,5 +1,15 @@
 <?php
 
+/****************
+rajouter un count sql pour afficher le nombre de recette dans chaques couleur pour chaque type
+
+count sql;
+ou une recherche, puis une boucle pour compter le nombre de resultats obtenu (moins efficace.. mais plus facile)
+
+
+ ***************/
+
+
 include 'masque.php';
 include 'erreur.php';
 

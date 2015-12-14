@@ -13,10 +13,24 @@ div.nom {
     font-family: "courier new" , Monospace;
 }
 
+form.formrecherche{
+    position: relative;
+
+    box-shadow: 8px 3px 20px #555;
+    
+    left: -12em;
+    #background-color: #fff;
+
+    width: 45em;
+    
+}
+
 div.recherche {
     position: relative;
 
     width: 16em;
+    
+    box-shadow: 8px 3px 5px #555;
 
     left: 65em;
     top: -10em;
@@ -29,20 +43,23 @@ div.typeform {
     position: relative;
     width: 10em;
     
+    box-shadow: 4px 2px 5px #000;
+    
     #background-color: #fff;
 
-    top: 6em;
-    left: -10em;    
+    top: 3em;
+    left: 2em;    
 }
 
 div.coulform {
     position: relative;
     width: 12em;
-    
+
+    box-shadow: 4px 2px 5px #000;
    # background-color: #fff;
 
-    top: -0.45em;
-    left: 3em;
+    top: -3.45em;
+    left: 15em;
     
 }
 
@@ -50,11 +67,12 @@ div.coulform {
 div.auteurform {
     position: relative;
     width: 13em;
-    
+
+    box-shadow: 4px 2px 5px #000;
   #  background-color: #fff;
 
-    top: -9.75em;
-    left: 17em;
+    top: -13.75em;
+    left: 30em;
 }
 
 
@@ -62,10 +80,11 @@ div.rechercherform {
     position: relative;
     width: 13em;
     
+#    box-shadow: 4px 2px 5px #000;    
  #   background-color: #fff;
 
-    top: -3em;
-    left: 2em;
+    top: -6em;
+    left: 15em;
     
 }
 
@@ -73,10 +92,11 @@ div.vldform {
     position: relative;
     width: 15em;
     
-#    background-color: #fff;
+    box-shadow: 4px 2px 5px #000;
+    #  background-color: #fff;
 
-    top: -1em;
-    left: 2em;
+    top: -4em;
+    left: 28em;
  
 }
 

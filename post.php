@@ -63,7 +63,7 @@ if(!isset($erreur)) {
     mysql_select_db("recette",$db);
     
     // on crée la requête SQL ///**** pas encore de photo ****///
-    $sql = "insert into recette (auteur,nom,recette,type,couleur,note) values ('".$_POST['auteur']."','".$_POST['biere']."','".nl2br(htmlspecialchars($_POST['recette']))."','".$_POST['type']."','".$_POST['couleur']."', '5');";
+    $sql = "insert into recette (auteur,nom,recette,type,couleur,note,nb) values ('".$_POST['auteur']."','".$_POST['biere']."','".nl2br(htmlspecialchars($_POST['recette']))."','".$_POST['type']."','".$_POST['couleur']."', '5', '1');";
     
     // on envoie la requête
     $req = mysql_query($sql) or die('Erreur SQL !<h1>'.$sql.'<h1>'.mysql_error());    
